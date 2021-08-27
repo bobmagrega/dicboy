@@ -130,14 +130,18 @@ hr {
   justify-content: center;
 }
 
-#categories-section img {
+.cat-img {
   width: 90%;
   border-radius: 2%;
 }
 
-#categories-section img:hover {
-  filter: brightness(0.4)
-}
+.cat-img:hover {
+  filter: brightness(0);
+  }
+
+.cat-img:hover + .cat-p {
+    visibility: visible;
+    }
 
 
 .cat-col {
@@ -150,15 +154,17 @@ hr {
 .cat-p {
   position: absolute;
   color: #fff;
-  background-color: #97d1c940;
-  font-size: 2.5rem;
-  top: 80%;
+  background-color: #97d1c900;
+  font-size: 2rem;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 3% 1.3% 3%;
   border-radius: 10%;
   border: 1px solid;
   border-color: #fff50;
+  visibility: hidden;
+
 }
 
 /* Footer Section */
